@@ -2,18 +2,6 @@
 
 These coding patterns will help you solve Leetcode problems effectively. These programs are written in Python.
 
-| Coding Pattern                | Problem Format                            | Code Snippet                                  |
-| :---                          |     :---:                                 |          ---:                                 |
-|   Sliding Window(fixed size K)                
-|   Input: Continuous Subarray with K elements in a list of N elements
-    Approach: Slide a window of size K along the list
-    Time: `O(N)`
-    Brute Force: `O(N*K)
-|   Max Sum of subarray                                   
-
-    
-|   
-
-
-
-
+| Pattern                              | Format                                                                                                                                                                                       | Code Snippet                                                                                                                                                                                                                                            |
+| ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Sliding Window (Given Window size K) | Hint: Continuous & Subarray of size K<br>Output: Operation(sum, max, av) of subarray of size K<br>Approach: Slide along a window of size K<br>SW Time: O(N)<br>Brute Force Time: O(N\*K)<br> | Max sum of subarray of K continuous elements<br><br>start = 0<br>sum, result = 0, []<br>for end in range(0, len(arr)):<br>sum = sum + arr[end]<br>if end>= k-1:<br>result.append(sum)<br>sum = sum - arr[start]<br>start += 1<br>return max(result)<br> |
